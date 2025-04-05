@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Card</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+<body>
+  <main>
+    <article class="product-card">
+      <div class="product-card__container">
+        <img 
+          class="product-card__image" 
+          src="assets/images/product-thumbnail.png" 
+          alt="Product name - detailed view of the item" 
+        />
+        
+        <div class="product-card__content">
+          <div class="product-card__info">
+            <div class="product-card__header">
+              <h2 class="product-card__title">Lorem Ipsum Dolor Sit Amet Consectetur</h2>
+              
+              <div class="product-card__rating">
+                <div class="star-rating" aria-label="Product rated 4 out of 5 stars">
+                  <img class="star-rating__star" src="assets/images/icons/star-filled.svg" alt="" />
+                  <img class="star-rating__star" src="assets/images/icons/star-filled.svg" alt="" />
+                  <img class="star-rating__star" src="assets/images/icons/star-filled.svg" alt="" />
+                  <img class="star-rating__star" src="assets/images/icons/star-filled.svg" alt="" />
+                  <img class="star-rating__star" src="assets/images/icons/star-empty.svg" alt="" />
+                </div>
+                <span class="product-card__review-count" aria-label="126 reviews">126</span>
+              </div>
+            </div>
+            
+            <p class="product-card__sku">SKU: 12345678</p>
+          </div>
+          
+          <div class="product-card__pricing">
+            <p class="product-card__original-price" aria-label="Original price: 999 rubles">999 ₽</p>
+            <p class="product-card__current-price" aria-label="Current price: 699 rubles">699 ₽</p>
+          </div>
+        </div>
+        
+        <div class="product-card__actions">
+          <button class="product-card__action-button product-card__action-button--delivery">
+            <img src="assets/images/icons/truck.svg" alt="" aria-hidden="true" />
+            <span>Order delivery</span>
+          </button>
+          
+          <button class="product-card__action-button product-card__action-button--cart">
+            <img src="assets/images/icons/shopping-bag.svg" alt="" aria-hidden="true" />
+            <span>Add to cart</span>
+          </button>
+        </div>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
