@@ -1,3 +1,5 @@
 @import 'base/reset.css';
 @import 'base/variables.css';
 @import 'components/product-card.css';
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');

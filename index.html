@@ -1,55 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Product Card</title>
   <link rel="stylesheet" href="styles/main.css" />
 </head>
+
 <body>
   <main>
     <article class="product-card">
       <div class="product-card__container">
-        <img 
-          class="product-card__image" 
-          src="assets/images/product-thumbnail.png" 
-          alt="Product name - detailed view of the item" 
-        />
-        
-        <div class="product-card__content">
-          <div class="product-card__info">
-            <div class="product-card__header">
-              <h2 class="product-card__title">Lorem Ipsum Dolor Sit Amet Consectetur</h2>
-              
-              <div class="product-card__rating">
-                <div class="star-rating" aria-label="Product rated 4 out of 5 stars">
-                  <img class="star-rating__star" src="assets/images/icons/star-filled.svg" alt="" />
-                  <img class="star-rating__star" src="assets/images/icons/star-filled.svg" alt="" />
-                  <img class="star-rating__star" src="assets/images/icons/star-filled.svg" alt="" />
-                  <img class="star-rating__star" src="assets/images/icons/star-filled.svg" alt="" />
-                  <img class="star-rating__star" src="assets/images/icons/star-empty.svg" alt="" />
+        <div class="product-content-container">
+          <img class="product-card__image" src="assets/images/product-thumbnail.png"
+            alt="Product name - detailed view of the item" />
+
+          <div class="product-card__content">
+            <div class="product-card__info">
+              <div class="product-card__header">
+                <h2 class="product-card__title">
+                  Lorem Ipsum Dolor Sit Amet Consectetur
+                </h2>
+
+                <div class="product-card__rating">
+                  <div class="star-rating" aria-label="Product rated 4 out of 5 stars">
+                    <img class="star-rating__star" src="assets/images/icons/star-filled.svg" alt="" />
+                    <img class="star-rating__star" src="assets/images/icons/star-filled.svg" alt="" />
+                    <img class="star-rating__star" src="assets/images/icons/star-filled.svg" alt="" />
+                    <img class="star-rating__star" src="assets/images/icons/star-filled.svg" alt="" />
+                    <img class="star-rating__star" src="assets/images/icons/star-empty.svg" alt="" />
+                  </div>
+                  <span class="product-card__review-count" aria-label="126 reviews">126</span>
                 </div>
-                <span class="product-card__review-count" aria-label="126 reviews">126</span>
               </div>
             </div>
-            
-            <p class="product-card__sku">SKU: 12345678</p>
-          </div>
-          
-          <div class="product-card__pricing">
-            <p class="product-card__original-price" aria-label="Original price: 999 rubles">999 ₽</p>
-            <p class="product-card__current-price" aria-label="Current price: 699 rubles">699 ₽</p>
+
+            <div class="product-card__pricing">
+              <div class="identifier-num">
+                <p class="product-card__sku">Identifier number</p>
+              </div>
+              <div class="pricing-wrapper">
+                <p class="product-card__original-price" aria-label="Original price: 999 rubles">
+                  999 ₽
+                </p>
+                <p class="product-card__current-price" aria-label="Current price: 699 rubles">
+                  699 ₽
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        
+
         <div class="product-card__actions">
           <button class="product-card__action-button product-card__action-button--delivery">
-            <img src="assets/images/icons/truck.svg" alt="" aria-hidden="true" />
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 3H1V16H16V3Z" stroke="black" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M16 8H20L23 11V16H16V8Z" stroke="black" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M5.5 21C6.88071 21 8 19.8807 8 18.5C8 17.1193 6.88071 16 5.5 16C4.11929 16 3 17.1193 3 18.5C3 19.8807 4.11929 21 5.5 21Z"
+                stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M18.5 21C19.8807 21 21 19.8807 21 18.5C21 17.1193 19.8807 16 18.5 16C17.1193 16 16 17.1193 16 18.5C16 19.8807 17.1193 21 18.5 21Z"
+                stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
             <span>Order delivery</span>
           </button>
-          
+
           <button class="product-card__action-button product-card__action-button--cart">
-            <img src="assets/images/icons/shopping-bag.svg" alt="" aria-hidden="true" />
+            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M6.5 2L3.5 6V20C3.5 20.5304 3.71071 21.0391 4.08579 21.4142C4.46086 21.7893 4.96957 22 5.5 22H19.5C20.0304 22 20.5391 21.7893 20.9142 21.4142C21.2893 21.0391 21.5 20.5304 21.5 20V6L18.5 2H6.5Z"
+                stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M3.5 6H21.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M16.5 10C16.5 11.0609 16.0786 12.0783 15.3284 12.8284C14.5783 13.5786 13.5609 14 12.5 14C11.4391 14 10.4217 13.5786 9.67157 12.8284C8.92143 12.0783 8.5 11.0609 8.5 10"
+                stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+
             <span>Add to cart</span>
           </button>
         </div>
@@ -57,4 +88,5 @@
     </article>
   </main>
 </body>
+
 </html>

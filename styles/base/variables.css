@@ -5,31 +5,31 @@
   --color-red: rgba(148, 27, 12, 1);
   --color-white: rgba(255, 255, 255, 1);
   --color-light-gray: rgba(242, 242, 242, 1);
-  
+
   /* Typography */
   --font-family-primary: "Rubik", Helvetica, Arial, sans-serif;
-  
+
   /* Font sizes */
   --font-size-xs: 14px;
   --font-size-sm: 18px;
   --font-size-md: 24px;
   --font-size-lg: 43px;
-  
+
   /* Line heights */
   --line-height-tight: 100%;
   --line-height-normal: 120.00000476837158%;
   --line-height-relaxed: 179.99999523162842%;
-  
+
   /* Font weights */
   --font-weight-regular: 400;
   --font-weight-medium: 500;
-  
+
   /* Spacing */
   --spacing-xs: 10px;
   --spacing-sm: 15px;
   --spacing-md: 30px;
   --spacing-lg: 100px;
-  
+
   /* Border radius */
   --border-radius: 10px;
 }
